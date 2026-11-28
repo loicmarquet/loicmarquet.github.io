@@ -48,7 +48,7 @@ section{padding:64px 0}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:center}
 .hero .sur{font-weight:bold;font-size:1.05rem;margin-bottom:12px}
 .hero .soustitre{font-size:clamp(1.2rem,2.4vw,1.5rem);font-weight:bold;color:var(--orangeclair);margin:14px 0 20px;line-height:1.35}
-.hero .accroche{font-size:1.15rem;font-weight:bold}
+.hero .accroche{font-size:1.2rem;font-weight:normal}
 .hero img{width:100%;height:auto;border-radius:16px;display:block}
 .portrait{margin:0}
 .portrait figcaption{font-size:.85rem;margin-top:8px;text-align:right;color:var(--blanc)}
@@ -144,6 +144,9 @@ footer p{margin:0 0 8px}
  section{padding:44px 0}
  .hero .wrap{grid-template-columns:1fr}
  .hero img,.portrait{max-width:240px}
+ .hero .portrait{order:-1;max-width:132px;margin-bottom:4px}
+ .hero .portrait img{border-radius:50%;aspect-ratio:1/1;object-fit:cover;object-position:50% 20%}
+ .hero .portrait figcaption{text-align:left;font-size:.8rem;margin-top:6px}
  ol.parcours li{grid-template-columns:1fr;gap:4px}
 }
 
@@ -170,6 +173,21 @@ nav a[aria-current="page"]{background:var(--bleu);color:var(--blanc);text-decora
  header.top img{height:38px}
  header.top .wrap{gap:8px;padding-top:8px;padding-bottom:6px}
 }
+.legal{max-width:780px}
+.legal h2{font-size:1.45rem;margin-top:44px}
+.legal h3{font-size:1.1rem;margin-top:22px;margin-bottom:6px}
+.legal ul{padding-left:1.2em}
+.sommaire{background:var(--clair);border-radius:12px;padding:16px 24px;margin:20px 0 8px}
+.sommaire ol{margin:0;padding-left:1.2em}
+.sommaire li{margin:4px 0}
+.decouvrir{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.decouvrir a{display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;padding:18px 18px 20px;border-radius:12px;background:var(--clair);border:2px solid transparent;color:var(--encre);text-decoration:none}
+.fond .decouvrir a{background:var(--blanc)}
+.decouvrir .t{font-weight:bold;font-size:1.12rem;color:var(--bleu)}
+.decouvrir .d{font-size:.95rem;line-height:1.45}
+.decouvrir a:hover{border-color:var(--bleu)}
+.decouvrir a:hover .t{text-decoration:underline}
+.decouvrir a:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 </head>
 <body>
@@ -190,8 +208,8 @@ h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 <p class="sur">Formateur · Consultant · Conférencier · Manager de transition</p>
 <h1>Former, accompagner, relier</h1>
 <p class="soustitre">Développer les compétences. Transformer les pratiques. Renforcer les organisations.</p>
-<p class="accroche">Trente ans à concevoir, animer et diriger la formation, en entreprise comme en organisme de formation. J’interviens auprès de vos équipes, ou à la tête de votre service formation ou de votre organisme le temps d’une mission.</p>
-<p>Tout a commencé par des études de médecine et dix ans d’écoute auprès de personnes confrontées à la maladie. En 2002, je me suis reconverti dans le développement des ressources humaines et des compétences. J’ai gardé de mes débuts une façon de travailler : partir des personnes, de leurs besoins et de leurs singularités.</p>
+<p class="accroche">Directeur général adjoint, directeur d’organismes de formation et de CFA, directeur du développement des ressources humaines : j’ai dirigé des fonctions formation et RH, siégé en comité exécutif et piloté des réseaux nationaux. J’associe cette expérience de dirigeant à trente ans de pédagogie, pour intervenir auprès de vos équipes ou prendre la tête de votre service formation ou de votre organisme le temps d’une mission.</p>
+<p>Tout a commencé par des études de médecine et dix ans d’écoute auprès de personnes confrontées à la maladie, avant ma reconversion en 2002 dans le développement des ressources humaines et des compétences. J’en garde une façon de travailler : partir des personnes, de leurs besoins et de leurs singularités.</p>
 <div class="actions">
 <a class="btn plein" href="https://calendar.app.google/qABRczm3CQyeZZjx9">Réserver un échange de 30 minutes</a>
 <a class="btn vide" href="#prestations">Voir mes prestations</a>
@@ -209,7 +227,14 @@ h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 </div>
 </section>
 
-<section id="prestations" class="fond">
+<section id="decouvrir" class="fond">
+<div class="wrap">
+<h2>Découvrir mon activité</h2>
+<ul class="decouvrir"><li><a href="expertises.html"><span class="t">Expertises <span aria-hidden="true">→</span></span><span class="d">Inclusion et handicap, santé mentale au travail, prévention des discriminations, Qualiopi.</span></a></li><li><a href="robustesse.html"><span class="t">Robustesse <span aria-hidden="true">→</span></span><span class="d">Conférences et ateliers sur la robustesse des organisations, avec Equilibre Média.</span></a></li><li><a href="transition.html"><span class="t">Management de transition <span aria-hidden="true">→</span></span><span class="d">Direction temporaire d’une fonction formation, d’un organisme de formation ou d’un CFA.</span></a></li><li><a href="references.html"><span class="t">Références <span aria-hidden="true">→</span></span><span class="d">Témoignages, exemples de missions et chiffres clés.</span></a></li><li><a href="parcours.html"><span class="t">Parcours <span aria-hidden="true">→</span></span><span class="d">De l’écoute en milieu médical à la direction d’organismes et de réseaux nationaux.</span></a></li></ul>
+</div>
+</section>
+
+<section id="prestations">
 <div class="wrap">
 <h2>Mes prestations</h2>
 <p class="intro">Cinq façons de travailler ensemble, selon votre besoin.</p>
@@ -223,7 +248,7 @@ h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 <ul class="chiffres">
 <li><strong>91&nbsp;%</strong>de taux de satisfaction, sur 82 réponses à des évaluations anonymes</li>
 <li><strong>5&nbsp;855</strong>personnes formées depuis 1993</li>
-<li><strong>452</strong>sessions animées, en France et dans dix autres pays</li>
+<li><strong>452</strong>sessions animées, en France, dans les outre-mer et dans sept autres pays</li>
 </ul>
 <p class="note">Chiffres arrêtés au 20 novembre 2026. Mode de calcul et détails sur la page <a href="references.html" style="color:inherit">Références</a>.</p>
 <div class="actions"><a class="btn vide" href="references.html" style="border-color:var(--blanc);background:transparent;color:var(--blanc)">Voir les témoignages et les références</a></div>
@@ -256,6 +281,7 @@ h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 <p>Un premier échange sans engagement, pour cerner votre besoin et vérifier que je suis la bonne personne.</p>
 <div class="actions"><a class="btn plein rdv" href="https://calendar.app.google/qABRczm3CQyeZZjx9">Réserver un échange de 30 minutes</a></div>
 <p class="note" style="color:var(--blanc);margin-top:8px">Visioconférence, sans engagement. La réservation se fait sur une page Google Agenda.</p>
+<p class="note" style="color:var(--blanc)">Vos coordonnées servent uniquement à répondre à votre demande et à organiser notre échange. Merci de ne pas transmettre de données de santé lors d’un premier contact. <a href="informations-legales.html#info-confidentialite" style="color:inherit">En savoir plus sur la confidentialité</a></p>
 <p style="margin-top:28px">Vous préférez écrire ? Choisissez votre sujet.</p>
 <p class="delai">Réponse aux courriels sous 48 heures ouvrées.</p>
 <div class="actions">
@@ -274,10 +300,9 @@ h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 </main>
 <footer>
 <div class="wrap">
-<p><strong>Mentions légales.</strong> Site édité par Loïc Marquet, Paris. Contact : <a href="mailto:loicmarquet75@gmail.com">loicmarquet75@gmail.com</a>. Hébergement : GitHub Pages, GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
-<p><strong>Crédit photo.</strong> Portrait de Loïc Marquet : © Cécile Gabriel. Toute reproduction est soumise à l’autorisation de la photographe.</p>
-<p><strong>Vie privée.</strong> Ce site n’utilise ni cookie ni outil de mesure d’audience. Les témoignages sont issus de questionnaires anonymes. La prise de rendez-vous en ligne se fait sur Google Agenda, soumis aux règles de confidentialité de Google.</p>
-<p><strong>Accessibilité.</strong> Ce site est conçu pour être lisible par toutes et tous. Si vous rencontrez une difficulté, signalez-la-moi par courriel.</p>
+<p><strong>Loïc Marquet</strong> · Former, accompagner, relier</p>
+<p><a href="#contact">Contact</a> · <a href="informations-legales.html#info-accessibilite">Accessibilité</a> · <a href="informations-legales.html">Informations légales et confidentialité</a></p>
+<p>Portrait de Loïc Marquet : © Cécile Gabriel. Ce site n’utilise ni cookie ni outil de mesure d’audience.</p>
 </div>
 </footer>
 <script>var n=document.querySelector('nav'),a=n&&n.querySelector('[aria-current]');if(a&&n.scrollWidth>n.clientWidth){n.scrollLeft=a.offsetLeft-n.offsetLeft-(n.clientWidth-a.offsetWidth)/2}</script>

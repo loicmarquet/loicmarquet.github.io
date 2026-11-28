@@ -170,6 +170,21 @@ nav a[aria-current="page"]{background:var(--bleu);color:var(--blanc);text-decora
  header.top img{height:38px}
  header.top .wrap{gap:8px;padding-top:8px;padding-bottom:6px}
 }
+.legal{max-width:780px}
+.legal h2{font-size:1.45rem;margin-top:44px}
+.legal h3{font-size:1.1rem;margin-top:22px;margin-bottom:6px}
+.legal ul{padding-left:1.2em}
+.sommaire{background:var(--clair);border-radius:12px;padding:16px 24px;margin:20px 0 8px}
+.sommaire ol{margin:0;padding-left:1.2em}
+.sommaire li{margin:4px 0}
+.decouvrir{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.decouvrir a{display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;padding:18px 18px 20px;border-radius:12px;background:var(--clair);border:2px solid transparent;color:var(--encre);text-decoration:none}
+.fond .decouvrir a{background:var(--blanc)}
+.decouvrir .t{font-weight:bold;font-size:1.12rem;color:var(--bleu)}
+.decouvrir .d{font-size:.95rem;line-height:1.45}
+.decouvrir a:hover{border-color:var(--bleu)}
+.decouvrir a:hover .t{text-decoration:underline}
+.decouvrir a:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 </head>
 <body>
@@ -220,6 +235,7 @@ h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 <p>Un premier échange sans engagement, pour cerner votre besoin et vérifier que je suis la bonne personne.</p>
 <div class="actions"><a class="btn plein rdv" href="https://calendar.app.google/qABRczm3CQyeZZjx9">Réserver un échange de 30 minutes</a></div>
 <p class="note" style="color:var(--blanc);margin-top:8px">Visioconférence, sans engagement. La réservation se fait sur une page Google Agenda.</p>
+<p class="note" style="color:var(--blanc)">Vos coordonnées servent uniquement à répondre à votre demande et à organiser notre échange. Merci de ne pas transmettre de données de santé lors d’un premier contact. <a href="informations-legales.html#info-confidentialite" style="color:inherit">En savoir plus sur la confidentialité</a></p>
 <p style="margin-top:28px">Vous préférez écrire ? Choisissez votre sujet.</p>
 <p class="delai">Réponse aux courriels sous 48 heures ouvrées.</p>
 <div class="actions">
@@ -238,10 +254,9 @@ h1.titre{font-size:clamp(1.9rem,4.4vw,2.6rem);margin-bottom:12px}</style>
 </main>
 <footer>
 <div class="wrap">
-<p><strong>Mentions légales.</strong> Site édité par Loïc Marquet, Paris. Contact : <a href="mailto:loicmarquet75@gmail.com">loicmarquet75@gmail.com</a>. Hébergement : GitHub Pages, GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
-<p><strong>Crédit photo.</strong> Portrait de Loïc Marquet : © Cécile Gabriel. Toute reproduction est soumise à l’autorisation de la photographe.</p>
-<p><strong>Vie privée.</strong> Ce site n’utilise ni cookie ni outil de mesure d’audience. Les témoignages sont issus de questionnaires anonymes. La prise de rendez-vous en ligne se fait sur Google Agenda, soumis aux règles de confidentialité de Google.</p>
-<p><strong>Accessibilité.</strong> Ce site est conçu pour être lisible par toutes et tous. Si vous rencontrez une difficulté, signalez-la-moi par courriel.</p>
+<p><strong>Loïc Marquet</strong> · Former, accompagner, relier</p>
+<p><a href="#contact">Contact</a> · <a href="informations-legales.html#info-accessibilite">Accessibilité</a> · <a href="informations-legales.html">Informations légales et confidentialité</a></p>
+<p>Portrait de Loïc Marquet : © Cécile Gabriel. Ce site n’utilise ni cookie ni outil de mesure d’audience.</p>
 </div>
 </footer>
 <script>var n=document.querySelector('nav'),a=n&&n.querySelector('[aria-current]');if(a&&n.scrollWidth>n.clientWidth){n.scrollLeft=a.offsetLeft-n.offsetLeft-(n.clientWidth-a.offsetWidth)/2}</script>
